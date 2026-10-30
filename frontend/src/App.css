@@ -1,0 +1,155 @@
+.App-header {
+  background-color: #1f3a5f;
+  color: white;
+  padding: 16px 24px;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.App-header p {
+  margin: 4px 0 0;
+  opacity: 0.85;
+}
+
+.App-main {
+  padding: 20px 24px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 6px 8px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.money,
+th.money,
+td.money {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.sort-button {
+  background: none;
+  border: none;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.toolbar label {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.sync-status,
+.as-of-note,
+.ledger-meta {
+  color: #555;
+  margin: 4px 0;
+}
+
+.ledger-backdrop {
+  position: fixed;
+  z-index: 10;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px 20px;
+  overflow-y: auto;
+}
+
+.ledger {
+  background-color: white;
+  border-radius: 6px;
+  padding: 20px;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.ledger-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ledger-header h2 {
+  margin: 0;
+}
+
+.ledger-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 12px 0;
+}
+
+.ledger-summary dt {
+  color: #555;
+  font-size: 0.85rem;
+}
+
+.ledger-summary dd {
+  margin: 2px 0 0;
+  font-size: 1.2rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.ledger-balance dd {
+  font-weight: bold;
+}
+
+.ledger-table-scroll {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.opening-balance {
+  font-style: italic;
+}
+
+.detail {
+  display: block;
+  color: #666;
+  font-size: 0.8rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
